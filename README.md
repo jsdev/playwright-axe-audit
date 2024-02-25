@@ -1,4 +1,4 @@
-# playwright-axe-audit
+# axe-audit-reporting
 containerized solution where you can create
 
 ## Run npm install because Dockerfile copy package*.json and node_modules
