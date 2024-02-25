@@ -1,15 +1,13 @@
 {
-  "name": "@jakepartusch/lumberjack",
-  "version": "0.6.1",
-  "description": "Scans your entire website for accessibility issues",
-  "main": "index.js",
-  "bin": "./bin/cli.js",
+  "name": "@contanerized/playwright-axe-reporting",
+  "version": "0.1.0",
+  "description": "checks 103 axe rules against any number of urls",
   "engines": {
     "node": ">=10.0.0"
   },
   "author": {
-    "name": "Jake Partusch",
-    "url": "https://github.com/JakePartusch"
+    "name": "Anthony Delorie",
+    "url": "https://github.com/jsdev"
   },
   "keywords": [
     "accessibility",
@@ -17,24 +15,19 @@
     "scan",
     "audit"
   ],
-  "homepage": "https://github.com/JakePartusch/lumberjack",
+  "homepage": "https://github.com/jsdev/playwright-axe-audit",
   "bugs": {
-    "url": "https://github.com/JakePartusch/lumberjack/issues"
+    "url": "https://github.com/jsdev/playwright-axe-audit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JakePartusch/lumberjack.git"
-  },
-  "scripts": {
-    "mx": "node ./bin/report.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "audit": "node ./bin/cli.js --url 'https://jake.partus.ch'"
+    "url": "https://github.com/jsdev/playwright-axe-audit.git"
   },
   "license": "ISC",
   "dependencies": {
     "@axe-core/playwright": "^4.8.5",
-    "axe-core": "^4.8.4",
     "axe-html-reporter": "^2.2.3",
     "playwright": "^1.41.2"
   }
 }
+
