@@ -1,21 +1,24 @@
 # axe-audit-reporting
-containerized solution where you can create
+containerized solution where you can create audits keyed off domain and routes.
 
 ## Run npm install because Dockerfile copy package*.json and node_modules
 This was done so don't have to configure NPM differently between networks.
 This will allow easy to upgrade and use the latest npm modules, and if not be able to troubleshoot easier without having to step into container.
 ``` bash
 npm i
+
+mkdir reports
 ```
 
 ## Define all the applications and routes want to audit
 ``` bash
 touch urls.txt
 ```
-Don't put urls or seperate by commas, as it will be parsed by linebreaks
+Don't put urls in quotes or seperate by commas, as it will be parsed by linebreaks
 
 ## This assumes you have podman or docker running locally
-replace uname with your username or alternate path.
+replace uname with your username or alternate path. run pwd to get full path
+
 ``` bash
 podman build -t axe-audit-reporting .
 
