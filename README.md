@@ -17,7 +17,7 @@ Don't put urls or seperate by commas, as it will be parsed by linebreaks
 ## This assumes you have podman or docker running locally
 replace uname with your username or alternate path.
 ``` bash
-podmand build -t axe-audit-reporting .
+podman build -t axe-audit-reporting .
 
 podman run \
   -v /Users/uname/reports:/app/reports \
