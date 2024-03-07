@@ -37,9 +37,5 @@ docker run \
   axe-audit-reporting
 ```
 
-## Supports PKI for authentication that doesn't require 2FA
-Dockerfile does allow you to mount user.json file which can be a JSONified pem file. Playwright makes this easy to pass in using context.
-There are seperate steps where you comment out lines and run a command against your pem file.
-Which I'll be posting later this week.
-
-
+## Supports PKI for authentication and 2FA
+If need help configuring a proxy, mounting certs, etc. You can reach out.
